@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categs",
+  "info": {
+    "singularName": "categ",
+    "pluralName": "categs",
+    "displayName": "categ"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "destinations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::destination.destination",
+      "mappedBy": "categ"
+    }
+  }
+}
